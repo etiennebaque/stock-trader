@@ -1,24 +1,8 @@
-# README
+# Stock trader
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the final project of a fantastic Vuejs course available Udemy ([link](https://www.udemy.com/vuejs-2-the-complete-guide/learn/v4/content)). However, instead of using Google Firebase, as presented during the course, this project is using a Rails back-end.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Command history
+```
+rails new stock-trader --webpack=vue
+```
