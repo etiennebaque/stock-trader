@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app-home-content">
     <h2>Trade or View your portfolio</h2>
     <p>You may Save and Load your data.</p>
     <p>Click 'End day' to begin a new day!</p>
