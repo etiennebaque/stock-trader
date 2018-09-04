@@ -18,7 +18,6 @@
 //   console.log(app)
 // })
 
-
 // The above code uses Vue without the compiler, which means you cannot
 // use Vue to target elements in your existing html templates. You would
 // need to always use single file components.
@@ -31,7 +30,6 @@
 //   {{message}}
 //   <app></app>
 // </div>
-
 
 // import Vue from 'vue/dist/vue.esm'
 // import App from '../app.vue'
@@ -54,18 +52,29 @@
 //
 // Then uncomment the code block below:
 //
-import TurbolinksAdapter from 'vue-turbolinks'
-import Vue from 'vue'
-import App from '../app.vue'
+import TurbolinksAdapter from "vue-turbolinks";
+import Vue from "vue";
+import App from "../app.vue";
+import VueRouter from "vue-router";
+import { routes } from "../routes"
 
-Vue.use(TurbolinksAdapter)
+Vue.config.devtools = true
 
-document.addEventListener('turbolinks:load', () => {
+Vue.use(TurbolinksAdapter);
+Vue.use(VueRouter);
+
+const router = new VueRouter({
+  mode: 'history',
+  routes
+});
+
+document.addEventListener("turbolinks:load", () => {
   const app = new Vue({
-    el: '#app',
+    el: "#app",
+    router,
     components: { App }
-  })
-})
+  });
+});
 
 // document.addEventListener('DOMContentLoaded', () => {
 //   var app = new Vue({

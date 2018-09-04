@@ -39,4 +39,7 @@ export default {};
 </script>
 
 <style scoped>
+  nav {
+    margin-bottom: 15px;
+  }
 </style>
