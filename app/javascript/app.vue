@@ -1,22 +1,20 @@
 <template>
-  <div>
-    <p>{{ message }}</p>
+  <div class="container">
+    <app-nav></app-nav>
   </div>
 </template>
 
 <script>
+import AppNav from "packs/components/AppNav";
 export default {
-  data: function () {
-    return {
-      message: "Hello Vue people!!"
-    }
+  data: function() {
+    return {};
+  },
+  components: {
+    AppNav
   }
-}
+};
 </script>
 
 <style scoped>
-p {
-  font-size: 2em;
-  text-align: center;
-}
 </style>
