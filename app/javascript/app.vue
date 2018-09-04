@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <app-nav></app-nav>
-    
-    <div class="row">
+
+    <div class="main-content row">
       <div class="col-12">
         <router-view></router-view>
       </div>
@@ -22,6 +22,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-</style>
